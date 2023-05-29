@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<link rel="icon" data-savepage-href="https://pubs.opengroup.org/favicon.ico" href="data:image/vnd.microsoft.icon;base64,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">
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style data-savepage-href="style.css" type="text/css">A:link    { COLOR: #0000FF; }
+A:visited { COLOR: #6666FF; }
+A:active  { COLOR: #6666FF; }
+A:hover   {
+	COLOR: #FF0000;
+	TEXT-DECORATION: underline;
+}
+
+H1{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #006600;
+    BACKGROUND-COLOR: white;
+    FONT-SIZE: 20pt;
+}
+H2{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #006600;
+    BACKGROUND-COLOR: white;
+    FONT-SIZE: 15pt;
+}
+H3{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #006600;
+    BACKGROUND-COLOR: white;
+    FONT-SIZE: 14pt;
+}
+H4{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #006600;
+    BACKGROUND-COLOR: white;
+    FONT-Style: italic;
+    FONT-SIZE: 12pt;
+}
+H5{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #006600;
+    BACKGROUND-COLOR: white;
+    FONT-SIZE: 11pt;
+}
+H6{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #006666;
+    BACKGROUND-COLOR: white;
+    FONT-SIZE: 10pt;
+    font-weight : bold;
+}
+
+BODY
+{
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    MARGIN-LEFT: 3pt;
+    MARGIN-TOP: 2pt;
+    COLOR: #000000;
+    BACKGROUND-COLOR: white;
+}
+
+BLOCKQUOTE.synopsis
+{
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*em { font-style: italic; font-weight: normal; font-size:10pt; }*/
+
+BLOCKQUOTE.body
+{
+    FONT-SIZE: 10pt;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-LEFT: 0pt;
+    MARGIN-TOP: 0pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-INDENT: 10px;
+}
+
+TABLE {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+#    MARGIN-LEFT: 0pt;
+#    MARGIN-TOP: 0pt;
+    COLOR: #000000;
+    BACKGROUND-COLOR: white;
+}
+
+P.tent {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+}
+
+UL 
+{
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+}
+
+LI
+{
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+/*     TEXT-INDENT: -10px; */
+
+}
+
+HR
+{
+    COLOR: #009900;
+} 
+
+div.box { border: none; border-width: thin;
+background: rgb(204,204,255);
+font-size: 11pt;
+ }
+
+
+pre {FONT-SIZE: 11pt; }
+pre { font-family: monospace; }
+
+.topOfPage {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #333333;
+        background-image: /*savepage-url=../images/up-arrow.gif*/ var(--savepage-url-2);
+        background-repeat: no-repeat;
+        padding-left: 15px;
+}
+
+.youAreHere {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #488CAF;
+	font-weight: bold;
+}
+.breadcrumb {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+}
+.breadcrumb a:link {
+	color: #666666;
+	text-decoration: none;
+
+}
+.breadcrumb a:visited {
+	color: #005F6C;
+	text-decoration: none;
+
+}
+.breadcrumb a:hover {
+	color: #488CAF;
+	text-decoration: none;
+
+}
+.breadcrumb a:active {
+	color: #666666;
+	text-decoration: none;
+
+}
+
+table.nav {
+width: 100%;
+}
+
+table {
+   border-collapse: collapse;
+   width: 85%;
+  }
+tr.nav,td.nav {
+   border:none;
+}
+#tr {border-bottom: 1px solid ;
+#   border-top: 1px solid;
+#  }
+th { padding 0 0.5em;
+   text-align: center;
+#   background: #ffc;
+  }
+
+</style><!-- Generated by The Open Group's rhtm tool v1.2.4 -->
+<!-- Copyright (c) 2001-2013 The Open Group, All Rights Reserved -->
+<title>Utility Conventions</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-savepage-type="text/javascript" type="text/plain" async="" data-savepage-src="https://www.google-analytics.com/analytics.js"></script><script data-savepage-type="text/javascript" type="text/plain" async="" data-savepage-src="https://www.googletagmanager.com/gtag/js?id=UA-195689946-2&l=dataLayer&cx=c"></script><script data-savepage-type="" type="text/plain" async="" data-savepage-src="https://www.googletagmanager.com/gtag/js?id=G-NNDC9YRG6R"></script>
+<script data-savepage-type="" type="text/plain"></script><meta name="darkreader" content="71691e63ded14253ac75086e6562dd94">
+ 
+
+<style id="savepage-cssvariables">
+  :root {
+    --savepage-url-2: url(data:image/gif;base64,R0lGODlhDAANAKIAAK2trf///9jY2MjIyO7u7rOzs/n5+QAAACH5BAAAAAAALAAAAAAMAA0AAAM6GEoyI0QpM4C9w6h6+whCVxRdcxUEQVocMEQB01mQIoTWCgj2ie89mmHFA+U0KqARJSE8bC+JdKpIAAA7);
+  }
+</style>
+<script id="savepage-shadowloader" type="text/javascript">
+  "use strict";
+  window.addEventListener("DOMContentLoaded",
+  function(event) {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">
+<meta name="savepage-title" content="Utility Conventions">
+<meta name="savepage-pubdate" content="Unknown">
+<meta name="savepage-from" content="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">
+<meta name="savepage-date" content="Mon May 29 2023 22:46:54 GMT+0200 (Central European Summer Time)">
+<meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="33.9">
+<meta name="savepage-comments" content="">
+  </head>
+<body bgcolor="white" data-darkreader-inline-bgcolor="" style="--darkreader-inline-bgcolor: #181a1b;">
+<div class="NAVHEADER">
+<table summary="Header navigation table" class="nav" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="nav">
+<td class="nav" width="15%" align="left" valign="bottom"><a data-savepage-href="../basedefs/V1_chap11.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap11.html" accesskey="P">&lt;&lt;&lt;
+Previous</a></td>
+<td class="nav" width="70%" align="center" valign="bottom"><a data-savepage-href="contents.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/contents.html">Home</a></td>
+<td class="nav" width="15%" align="right" valign="bottom"><a data-savepage-href="../basedefs/V1_chap13.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap13.html" accesskey="N">Next
+&gt;&gt;&gt;</a></td>
+</tr>
+</tbody></table>
+
+<hr align="LEFT" width="100%">
+</div>
+
+
+<basefont size="3"></basefont> 
+
+<center><font size="2">The Open Group Base Specifications Issue 7, 2018 edition<br>
+IEEE Std 1003.1-2017 (Revision of IEEE Std 1003.1-2008)<br>
+Copyright © 2001-2018 IEEE and The Open Group</font></center>
+
+<hr size="2" noshade="">
+<a name="top"></a> 
+
+<h2><a name="tag_12">  12. </a>Utility Conventions</h2>
+
+<h3><a name="tag_12_01">   12.1 </a>Utility Argument Syntax</h3>
+
+<p>This section describes the argument syntax of the standard utilities and introduces terminology used throughout POSIX.1-2017 for
+describing the arguments processed by the utilities.</p>
+
+<p>Within POSIX.1-2017, a special notation is used for describing the syntax of a utility's arguments. Unless otherwise noted, all
+utility descriptions use this notation, which is illustrated by this example (see XCU <a data-savepage-href="../utilities/V3_chap02.html#tag_18_09_01" href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_01"><i>Simple Commands</i></a>):</p>
+
+<pre><tt>utility_name</tt><b>[</b><tt>-a</tt><b>][</b><tt>-b</tt><b>][</b><tt>-c</tt> <i>option_argument</i><b>]
+    [</b><tt>-d|-e</tt><b>][</b><tt>-f</tt><b>[</b><i>option_argument</i><b>]][</b><i>operand</i><tt>...</tt><b>]</b>
+</pre>
+
+<p>The notation used for the SYNOPSIS sections imposes requirements on the implementors of the standard utilities and provides a
+simple reference for the application developer or system user.</p>
+
+<ol>
+<li>
+<p>The utility in the example is named <i>utility_name</i>. It is followed by options, option-arguments, and operands. The
+arguments that consist of &lt;hyphen-minus&gt; characters and single letters or digits, such as <tt>'a'</tt>, are known as
+"options" (or, historically, "flags"). Certain options are followed by an "option-argument", as shown with [ <b>-c</b>
+<i>option_argument</i>]. The arguments following the last options and option-arguments are named "operands".</p>
+</li>
+
+<li>
+<p>Option-arguments are shown separated from their options by &lt;blank&gt; characters, except when the option-argument is enclosed
+in the <tt>'['</tt> and <tt>']'</tt> notation to indicate that it is optional. This reflects the situation in which an optional
+option-argument (if present) is included within the same argument string as the option; for a mandatory option-argument, it is the
+next argument. The Utility Syntax Guidelines in <a href="#tag_12_02">Utility Syntax Guidelines</a> require that the option be a
+separate argument from its option-argument and that option-arguments not be optional, but there are some exceptions in POSIX.1-2017
+to ensure continued operation of historical applications:</p>
+
+<ol type="a">
+<li>
+<p>If the SYNOPSIS of a standard utility shows an option with a mandatory option-argument (as with [ <b>-c</b>
+<i>option_argument</i>] in the example), a conforming application shall use separate arguments for that option and its
+option-argument. However, a conforming implementation shall also permit applications to specify the option and option-argument in
+the same argument string without intervening &lt;blank&gt; characters.</p>
+</li>
+
+<li>
+<p>If the SYNOPSIS shows an optional option-argument (as with [ <b>-f</b>[ <i>option_argument</i>]] in the example), a conforming
+application shall place any option-argument for that option directly adjacent to the option in the same argument string, without
+intervening &lt;blank&gt; characters. If the utility receives an argument containing only the option, it shall behave as specified
+in its description for an omitted option-argument; it shall not treat the next argument (if any) as the option-argument for that
+option.</p>
+</li>
+</ol>
+</li>
+
+<li>
+<p>Options are usually listed in alphabetical order unless this would make the utility description more confusing. There are no
+implied relationships between the options based upon the order in which they appear, unless otherwise stated in the OPTIONS
+section, or unless the exception in Guideline 11 of <a href="#tag_12_02">Utility Syntax Guidelines</a> applies. If an option that
+does not have option-arguments is repeated, the results are undefined, unless otherwise stated.</p>
+</li>
+
+<li>
+<p>Frequently, names of parameters that require substitution by actual values are shown with embedded &lt;underscore&gt;
+characters. Alternatively, parameters are shown as follows:</p>
+
+<pre><tt>&lt;</tt><i>parameter name</i><tt>&gt;
+</tt>
+</pre>
+
+<p>The angle brackets are used for the symbolic grouping of a phrase representing a single parameter and conforming applications
+shall not include them in data submitted to the utility.</p>
+</li>
+
+<li>
+<p>When a utility has only a few permissible options, they are sometimes shown individually, as in the example. Utilities with many
+flags generally show all of the individual flags (that do not take option-arguments) grouped, as in:</p>
+
+<pre><tt>utility_name</tt> <b>[</b><tt>-abcDxyz</tt><b>][</b><tt>-p</tt> <i>arg</i><b>][</b><i>operand</i><b>]</b>
+</pre>
+
+<p>Utilities with very complex arguments may be shown as follows:</p>
+
+<pre><tt>utility_name</tt> <b>[</b><tt>options</tt><b>][</b><i>operands</i><b>]</b>
+</pre>
+</li>
+
+<li>
+<p>Unless otherwise specified, whenever an operand or option-argument is, or contains, a numeric value:</p>
+
+<ul>
+<li>
+<p>The number is interpreted as a decimal integer.</p>
+</li>
+
+<li>
+<p>Numerals in the range 0 to 2147483647 are syntactically recognized as numeric values.</p>
+</li>
+
+<li>
+<p>When the utility description states that it accepts negative numbers as operands or option-arguments, numerals in the range
+-2147483647 to 2147483647 are syntactically recognized as numeric values.</p>
+</li>
+
+<li>
+<p>When the utility description states that the number is a file size-related value (such as a file size or offset, line number, or
+block count), numerals in the range 0 to the maximum file size supported by the implementation are syntactically recognized as
+numeric values (see XCU <a data-savepage-href="../utilities/V3_chap01.html#tag_17_05" href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_05"><i>Considerations for Utilities in Support of Files of
+Arbitrary Size</i></a>). Where negative values are permitted, any value in the range -(maximum file size) to the maximum file size
+is accepted.</p>
+</li>
+
+<li>
+<p>Ranges greater than those listed here are allowed.</p>
+</li>
+</ul>
+
+<p>This does not mean that all numbers within the allowable range are necessarily semantically correct. A standard utility that
+accepts an option-argument or operand that is to be interpreted as a number, and for which a range of values smaller than that
+shown above is permitted by the POSIX.1-2017, describes that smaller range along with the description of the option-argument or
+operand. If an error is generated, the utility's diagnostic message shall indicate that the value is out of the supported range,
+not that it is syntactically incorrect.</p>
+</li>
+
+<li>
+<p>Arguments or option-arguments enclosed in the <tt>'['</tt> and <tt>']'</tt> notation are optional and can be omitted. Conforming
+applications shall not include the <tt>'['</tt> and <tt>']'</tt> symbols in data submitted to the utility.</p>
+</li>
+
+<li>
+<p>Arguments separated by the <tt>'|'</tt> ( &lt;vertical-line&gt;) bar notation are mutually-exclusive. Conforming applications
+shall not include the <tt>'|'</tt> symbol in data submitted to the utility. Alternatively, mutually-exclusive options and operands
+may be listed with multiple synopsis lines.<br>
+</p>
+
+<p>For example:</p>
+
+<pre><tt>utility_name -d</tt><b>[</b><tt>-a</tt><b>][</b><tt>-c</tt> <i>option_argument</i><b>][</b><i>operand</i><tt>...</tt><b>]</b>
+<tt>utility_name</tt><b>[</b><tt>-a</tt><b>][</b><tt>-b</tt><b>][</b><i>operand</i><tt>...</tt><b>]</b>
+</pre>
+
+<p>When multiple synopsis lines are given for a utility, it is an indication that the utility has mutually-exclusive arguments.
+These mutually-exclusive arguments alter the functionality of the utility so that only certain other arguments are valid in
+combination with one of the mutually-exclusive arguments. Only one of the mutually-exclusive arguments is allowed for invocation of
+the utility. Unless otherwise stated in an accompanying OPTIONS section, the relationships between arguments depicted in the
+SYNOPSIS sections are mandatory requirements placed on conforming applications. The use of conflicting mutually-exclusive arguments
+produces undefined results, unless a utility description specifies otherwise. When an option is shown without the <tt>'['</tt> and
+<tt>']'</tt> brackets, it means that option is required for that version of the SYNOPSIS. However, it is not required to be the
+first argument, as shown in the example above, unless otherwise stated.</p>
+</li>
+
+<li>
+<p>Ellipses ( <tt>"..."</tt> ) are used to denote that one or more occurrences of an operand are allowed. When an option or an
+operand followed by ellipses is enclosed in brackets, zero or more options or operands can be specified. The form:</p>
+
+<pre><tt>utility_name</tt> <b>[</b><tt>-g</tt> <i>option_argument</i><b>]</b><tt>...</tt><b>[</b><i>operand</i><tt>...</tt><b>]</b>
+</pre>
+
+<p>indicates that multiple occurrences of the option and its option-argument preceding the ellipses are valid, with semantics as
+indicated in the OPTIONS section of the utility. (See also Guideline 11 in <a href="#tag_12_02">Utility Syntax Guidelines</a>
+.)</p>
+
+<p>The form:</p>
+
+<pre><tt>utility_name -f</tt> <i>option_argument</i> <b>[</b><tt>-f</tt> <i>option_argument</i><b>]</b><tt>...</tt> <b>[</b><i>operand</i><tt>...</tt><b>]</b>
+</pre>
+
+<p>indicates that the <b>-f</b> option is required to appear at least once and may appear multiple times.</p>
+</li>
+
+<li>
+<p>When the synopsis line is too long to be printed on a single line in the Shell and Utilities volume of POSIX.1-2017, the
+indented lines following the initial line are continuation lines. An actual use of the command would appear on a single logical
+line.</p>
+</li>
+</ol>
+
+<h3><a name="tag_12_02">   12.2 </a>Utility Syntax Guidelines</h3>
+
+<p>The following guidelines are established for the naming of utilities and for the specification of options, option-arguments, and
+operands. The <a data-savepage-href="../functions/getopt.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/getopt.html"><i>getopt</i>()</a> function in the System Interfaces volume of POSIX.1-2017
+assists utilities in handling options and operands that conform to these guidelines.</p>
+
+<p>Operands and option-arguments can contain characters not specified in the portable character set.</p>
+
+<p>The guidelines are intended to provide guidance to the authors of future utilities, such as those written specific to a local
+system or that are components of a larger application. Some of the standard utilities do not conform to all of these guidelines; in
+those cases, the OPTIONS sections describe the deviations.<br>
+</p>
+
+<dl compact="">
+<dt><b>Guideline 1:</b></dt>
+
+<dd>Utility names should be between two and nine characters, inclusive.</dd>
+
+<dt><b>Guideline 2:</b></dt>
+
+<dd>Utility names should include lowercase letters (the <b>lower</b> character classification) and digits only from the portable
+character set.</dd>
+
+<dt><b>Guideline 3:</b></dt>
+
+<dd>Each option name should be a single alphanumeric character (the <b>alnum</b> character classification) from the portable
+character set. The <b>-W</b> (capital-W) option shall be reserved for vendor options. 
+
+<p>Multi-digit options should not be allowed.</p>
+</dd>
+
+<dt><b>Guideline 4:</b></dt>
+
+<dd>All options should be preceded by the <tt>'-'</tt> delimiter character.</dd>
+
+<dt><b>Guideline 5:</b></dt>
+
+<dd>One or more options without option-arguments, followed by at most one option that takes an option-argument, should be accepted
+when grouped behind one <tt>'-'</tt> delimiter.</dd>
+
+<dt><b>Guideline 6:</b></dt>
+
+<dd>Each option and option-argument should be a separate argument, except as noted in <a href="#tag_12_01">Utility Argument
+Syntax</a>, item (2).</dd>
+
+<dt><b>Guideline 7:</b></dt>
+
+<dd>Option-arguments should not be optional.</dd>
+
+<dt><b>Guideline 8:</b></dt>
+
+<dd>When multiple option-arguments are specified to follow a single option, they should be presented as a single argument, using
+&lt;comma&gt; characters within that argument or &lt;blank&gt; characters within that argument to separate them.</dd>
+
+<dt><b>Guideline 9:</b></dt>
+
+<dd>All options should precede operands on the command line.</dd>
+
+<dt><b>Guideline 10:</b></dt>
+
+<dd>The first <b>--</b> argument that is not an option-argument should be accepted as a delimiter indicating the end of options.
+Any following arguments should be treated as operands, even if they begin with the <tt>'-'</tt> character.</dd>
+
+<dt><b>Guideline 11:</b></dt>
+
+<dd>The order of different options relative to one another should not matter, unless the options are documented as
+mutually-exclusive and such an option is documented to override any incompatible options preceding it. If an option that has
+option-arguments is repeated, the option and option-argument combinations should be interpreted in the order specified on the
+command line.</dd>
+
+<dt><b>Guideline 12:</b></dt>
+
+<dd>The order of operands may matter and position-related interpretations should be determined on a utility-specific basis.</dd>
+
+<dt><b>Guideline 13:</b></dt>
+
+<dd>For utilities that use operands to represent files to be opened for either reading or writing, the <tt>'-'</tt> operand should
+be used to mean only standard input (or standard output when it is clear from context that an output file is being specified) or a
+file named <b>-</b>.</dd>
+
+<dt><b>Guideline 14:</b></dt>
+
+<dd>If an argument can be identified according to Guidelines 3 through 10 as an option, or as a group of options without
+option-arguments behind one <tt>'-'</tt> delimiter, then it should be treated as such.</dd>
+</dl>
+
+<p>The utilities in the Shell and Utilities volume of POSIX.1-2017 that claim conformance to these guidelines shall conform
+completely to these guidelines as if these guidelines contained the term "shall" instead of "should". On some implementations,
+the utilities accept usage in violation of these guidelines for backwards-compatibility as well as accepting the required form.</p>
+
+<p>Where a utility described in the Shell and Utilities volume of POSIX.1-2017 as conforming to these guidelines is required to
+accept, or not to accept, the operand <tt>'-'</tt> to mean standard input or output, this usage is explained in the OPERANDS
+section. Otherwise, if such a utility uses operands to represent files, it is implementation-defined whether the operand
+<tt>'-'</tt> stands for standard input (or standard output), or for a file named <b>-</b>.</p>
+
+<p>It is recommended that all future utilities and applications use these guidelines to enhance user portability. The fact that
+some historical utilities could not be changed (to avoid breaking existing applications) should not deter this future goal.</p>
+
+<p> </p>
+
+<a href="#top"><span class="topOfPage">return to top of page</span></a><br>
+<hr size="2" noshade="">
+<center><font size="2">UNIX ® is a registered Trademark of The Open Group.<br>
+POSIX ™ is a Trademark of The IEEE.<br>
+Copyright © 2001-2018 IEEE and The Open Group, All Rights Reserved<br>
+[ <a data-savepage-href="../mindex.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/mindex.html">Main Index</a> | <a data-savepage-href="../basedefs/contents.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/contents.html">XBD</a> | <a data-savepage-href="../functions/contents.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/contents.html">XSH</a> | <a data-savepage-href="../utilities/contents.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html">XCU</a> | <a data-savepage-href="../xrat/contents.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html">XRAT</a>
+]</font></center>
+
+<hr size="2" noshade="">
+<div class="NAVHEADER">
+<table summary="Header navigation table" class="nav" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="nav">
+<td class="nav" width="15%" align="left" valign="bottom"><a data-savepage-href="../basedefs/V1_chap11.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap11.html" accesskey="P">&lt;&lt;&lt;
+Previous</a></td>
+<td class="nav" width="70%" align="center" valign="bottom"><a data-savepage-href="contents.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/contents.html">Home</a></td>
+<td class="nav" width="15%" align="right" valign="bottom"><a data-savepage-href="../basedefs/V1_chap13.html" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap13.html" accesskey="N">Next
+&gt;&gt;&gt;</a></td>
+</tr>
+</tbody></table>
+
+<hr align="LEFT" width="100%">
+</div>
+
+
+
+</body></html>
